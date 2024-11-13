@@ -1,0 +1,28 @@
+/* Arquivo: style.css */
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo Hero */
+.hero {
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Cards de Produtos */
+.card-title {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.card-text {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Rodapé */
+footer {
+    font-size: 0.9rem;
+    text-align: center;
+}

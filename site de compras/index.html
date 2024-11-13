@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Loja Online</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Minha Loja</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="catalogo.html">Catálogo</a></li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Buscar produtos" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+            </form>
+            <button class="btn btn-primary ml-3" data-toggle="modal" data-target="#cartModal">Carrinho</button>
+        </div>
+    </nav>
+
+    <!-- Banner Hero -->
+    <section class="hero text-white text-center d-flex align-items-center" style="background-image: url('banner.jpg'); height: 60vh; background-size: cover;">
+        <div class="container">
+            <h1 class="display-4">Bem-vindo à Minha Loja</h1>
+            <p class="lead">Os melhores produtos com os melhores preços.</p>
+            <a href="catalogo.html" class="btn btn-primary btn-lg">Compre Agora</a>
+        </div>
+    </section>
+
+    <!-- Catálogo de Produtos -->
+    <main class="container mt-5">
+        <h2 class="mb-4 text-center">Nossos Produtos</h2>
+        
+        <!-- Lista de Produtos -->
+        <div class="row" id="productList">
+            
+            <!-- INSIRA OS CARTÕES DE PRODUTO AQUI -->
+            
+            <!-- Exemplo de Cartão de Produto -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="produto1.jpg" class="card-img-top" alt="Produto 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Produto 1</h5>
+                        <p class="card-text">Descrição breve do produto. Excelente qualidade!</p>
+                        <p class="text-success font-weight-bold">R$99,00</p>
+                        <button class="btn btn-primary btn-block add-to-cart" data-id="1">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Repita o Cartão para outros produtos -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="produto2.jpg" class="card-img-top" alt="Produto 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Produto 2</h5>
+                        <p class="card-text">Descrição breve do produto. Alta qualidade!</p>
+                        <p class="text-success font-weight-bold">R$149,00</p>
+                        <button class="btn btn-primary btn-block add-to-cart" data-id="2">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Adicione mais produtos conforme necessário -->
+
+        </div>
+    </main>
+
+    <!-- Modal do Carrinho de Compras -->
+    <div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="cartModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="cartModalLabel">Carrinho de Compras</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="cartItems">
+                    <p>Seu carrinho está vazio.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    <a href="checkout.html" class="btn btn-primary">Finalizar Compra</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Rodapé -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2024 Minha Loja. Todos os direitos reservados.</p>
+            <p>Contato: contato@minhaloja.com</p>
+            <div>
+                <a href="#" class="text-white mx-2">Termos de Serviço</a>
+                <a href="#" class="text-white mx-2">Política de Privacidade</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript do Bootstrap e app.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
